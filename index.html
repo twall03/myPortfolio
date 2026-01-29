@@ -3,137 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taylor Wall</title>
+    <title>Taylor Wall — Full Stack Product Manager</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="hero-image.jpg" alt="Taylor Wall" class="hero-photo">
-            </div>
-            <div class="hero-content">
-                <div class="hero-greeting">Hello, I'm</div>
-                <h1 class="hero-title">Taylor Wall</h1>
-                <p class="hero-subtitle">Statistics/DS Student, Developer & Entrepreneur</p>
-                <p class="hero-description">
-                    I build AI systems that work offline and respect privacy. 
-                    Currently developing Isla Engine, a local-first framework that extends beyond 
-                    traditional RAG with modular pipelines and hybrid search strategies.
-                </p>
-                <div class="hero-links">
-                    <a href="#work" class="hero-link">View Work</a>
-                    <a href="#contact" class="hero-link">Get in touch</a>
-                </div>
+    <!-- Nav -->
+    <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">Taylor Wall</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-        <div class="scroll-indicator">
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <!-- Mountain layers -->
+        <div class="mountains" aria-hidden="true">
+            <svg class="mountain-svg" viewBox="0 0 1440 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1a2230"/>
+                        <stop offset="100%" stop-color="#161a1e"/>
+                    </linearGradient>
+                    <linearGradient id="mtn-far" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#2a3545"/>
+                        <stop offset="100%" stop-color="#232b38"/>
+                    </linearGradient>
+                    <linearGradient id="mtn-mid" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#243040"/>
+                        <stop offset="100%" stop-color="#1e2732"/>
+                    </linearGradient>
+                    <linearGradient id="mtn-near" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1e2938"/>
+                        <stop offset="100%" stop-color="#1a222d"/>
+                    </linearGradient>
+                    <linearGradient id="mtn-front" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1a2230"/>
+                        <stop offset="100%" stop-color="#161a1e"/>
+                    </linearGradient>
+                </defs>
+                <!-- Sky -->
+                <rect width="1440" height="600" fill="url(#sky)"/>
+                <!-- Far range — faintest, tallest peaks -->
+                <path d="M0 600 L0 320 Q60 300 120 270 Q180 240 240 210 Q320 175 400 160 Q460 150 520 140 Q600 125 680 115 Q740 108 800 120 Q860 135 920 155 Q980 140 1040 125 Q1100 112 1160 105 Q1220 115 1280 130 Q1340 150 1400 175 L1440 190 L1440 600 Z" fill="url(#mtn-far)" opacity="0.7"/>
+                <!-- Ridge highlight — far -->
+                <path d="M0 320 Q60 300 120 270 Q180 240 240 210 Q320 175 400 160 Q460 150 520 140 Q600 125 680 115 Q740 108 800 120 Q860 135 920 155 Q980 140 1040 125 Q1100 112 1160 105 Q1220 115 1280 130 Q1340 150 1400 175 L1440 190" fill="none" stroke="#3a5068" stroke-width="0.8" opacity="0.4"/>
+                <!-- Mid range -->
+                <path d="M0 600 L0 380 Q80 360 160 330 Q240 300 320 275 Q400 250 480 230 Q540 215 600 200 Q680 185 760 175 Q820 168 880 180 Q940 195 1000 210 Q1060 195 1120 180 Q1180 168 1240 175 Q1300 188 1360 210 Q1400 225 1440 240 L1440 600 Z" fill="url(#mtn-mid)" opacity="0.8"/>
+                <!-- Ridge highlight — mid -->
+                <path d="M0 380 Q80 360 160 330 Q240 300 320 275 Q400 250 480 230 Q540 215 600 200 Q680 185 760 175 Q820 168 880 180 Q940 195 1000 210 Q1060 195 1120 180 Q1180 168 1240 175 Q1300 188 1360 210 Q1400 225 1440 240" fill="none" stroke="#4a6a88" stroke-width="0.6" opacity="0.3"/>
+                <!-- Near range -->
+                <path d="M0 600 L0 430 Q100 410 200 385 Q280 362 360 340 Q440 318 520 300 Q600 282 680 270 Q740 262 800 272 Q860 285 920 300 Q1000 282 1080 268 Q1140 258 1200 265 Q1260 278 1320 298 Q1380 318 1440 340 L1440 600 Z" fill="url(#mtn-near)" opacity="0.85"/>
+                <!-- Front range — blends into page -->
+                <path d="M0 600 L0 480 Q80 468 160 450 Q260 430 360 410 Q440 392 520 378 Q600 365 680 356 Q740 350 800 358 Q860 368 920 380 Q1000 368 1080 358 Q1160 350 1240 356 Q1320 368 1400 385 L1440 395 L1440 600 Z" fill="url(#mtn-front)"/>
+                <!-- Mist at base blending into page bg -->
+                <rect y="520" width="1440" height="80" fill="#161a1e" opacity="0.8"/>
+            </svg>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <p class="hero-eyebrow">Full Stack Product Manager</p>
+                <h1 class="hero-title">
+                    <span class="title-line">I build things that</span>
+                    <span class="title-line title-italic">actually ship.</span>
+                </h1>
+                <p class="hero-description">
+                    Strategy, design, code, deployment — I take ideas from rough sketch
+                    to live product. Currently building AI systems at Abstracta
+                    and studying at BYU.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn-primary">See my work</a>
+                    <a href="#contact" class="btn-secondary">Get in touch</a>
+                </div>
+            </div>
+            <div class="hero-headshot reveal reveal-delay-1">
+                <img src="headshot.png" alt="Taylor Wall" class="hero-photo">
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
             <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About</h2>
-                    <p>
-                        I'm a Statistics (Data Science) student at Brigham Young University, graduating in 2026. 
-                        I've built several businesses and work as a research and teaching assistant for an AI prototyping/product management class, 
-                        combining technical development with real-world entrepreneurship.
+            <div class="about-layout">
+                <div class="about-intro reveal">
+                    <span class="section-label">About</span>
+                    <h2 class="section-heading">I don't just manage products.<br>I build them end to end.</h2>
+                    <p class="about-body">
+                        Most people specialize. I'd rather understand the whole picture.
+                        I design interfaces, write production code, architect data pipelines,
+                        and talk to customers — whatever it takes to get the right thing
+                        out the door.
                     </p>
-                    <p>
-                        My current focus is Isla Engine, a local-first AI framework that extends beyond 
-                        traditional RAG systems. I developed the Isla Experiment methodology to rapidly 
-                        test and validate AI applications, from consumer tools like Isla Journal to 
-                        specialized document analysis platforms.
-                    </p>
-                    <p>
-                        Beyond tech, I've founded ProJet Pressure Wash (scaled to $2,000 MRR), worked as 
-                        a fishing guide in Alaska, and summited Pico de Orizaba. I've also volunteered 
-                        internationally, including two years in Mexico managing budgets over $100,000.
+                    <p class="about-body">
+                        My toolkit leans heavily on AI — agentic systems, LLM pipelines,
+                        RAG architectures — not as buzzwords, but as practical tools
+                        I use to build and ship faster than most teams.
                     </p>
                 </div>
-                <div class="about-skills">
-                    <div class="skill-group">
-                        <h3>Data & AI</h3>
-                        <p>Python, R, SQL, Machine Learning, AI Frameworks, Statistical Modeling, Data Analysis</p>
+                <div class="about-skills reveal reveal-delay-1">
+                    <div class="skill-block">
+                        <h3>AI & Data</h3>
+                        <p>LLM Pipelines, RAG, Agentic Workflows, Prompt Engineering, Python, R, SQL</p>
                     </div>
-                    <div class="skill-group">
-                        <h3>Development</h3>
-                        <p>React, Dart/Flutter, Electron, Neutralino, JavaScript, Cross-Platform Apps</p>
+                    <div class="skill-block">
+                        <h3>Engineering</h3>
+                        <p>React, Dart/Flutter, Python, JavaScript, Full Stack Development</p>
                     </div>
-                    <div class="skill-group">
-                        <h3>Leadership</h3>
-                        <p>Startup Founding, Teaching, Project Management, Team Building</p>
+                    <div class="skill-block">
+                        <h3>Product & Growth</h3>
+                        <p>Product Strategy, UI/UX Design, Customer Discovery, Sales, Go-to-Market</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Section -->
+    <!-- Roles -->
+    <section class="roles">
+        <div class="container">
+            <div class="roles-header reveal">
+                <span class="section-label">How I work</span>
+                <h2 class="section-heading">Three roles. One person.</h2>
+            </div>
+            <div class="roles-grid">
+                <div class="role-card reveal">
+                    <span class="role-number">01</span>
+                    <h3 class="role-title">Designer</h3>
+                    <p class="role-desc">I start with the user. Research, wireframes, UI — I shape the product before a line of code is written. Good design isn't decoration, it's the reason people come back.</p>
+                </div>
+                <div class="role-card reveal reveal-delay-1">
+                    <span class="role-number">02</span>
+                    <h3 class="role-title">Engineer</h3>
+                    <p class="role-desc">I build it myself. Full stack, AI pipelines, data architecture — I write the code, deploy the infrastructure, and fix what breaks at 2am.</p>
+                </div>
+                <div class="role-card reveal reveal-delay-2">
+                    <span class="role-number">03</span>
+                    <h3 class="role-title">Manager</h3>
+                    <p class="role-desc">I own the outcome. Roadmap, prioritization, stakeholder alignment, go-to-market — I make sure the right thing ships at the right time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
     <section id="work" class="work">
         <div class="container">
-            <h2 class="section-title">Work</h2>
+            <div class="section-intro reveal">
+                <span class="section-label">Work</span>
+                <h2 class="section-heading">A few things I've built.</h2>
+            </div>
             <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-number">01</div>
-                    <div class="work-content">
-                        <h3>Isla Engine</h3>
-                        <p>A local-first AI framework I'm building for analysis and retrieval that goes beyond traditional RAG. Features modular pipelines for extraction, scoring, and summarization with pluggable search strategies (vector, BM25, hybrid). Runs offline via Ollama with optional cloud LLM routing.</p>
-                        <div class="work-tech">
-                            <span>Local-First AI</span>
-                            <span>Ollama</span>
-                            <span>Hybrid Search</span>
-                            <span>Modular Pipelines</span>
+                <a href="https://www.abstracta.tech" target="_blank" rel="noopener noreferrer" class="work-card reveal">
+                    <div class="work-card-inner">
+                        <span class="work-number">01</span>
+                        <h3 class="work-title">Abstracta</h3>
+                        <span class="work-role">Founder</span>
+                        <p class="work-desc">An AI platform that reads, understands, and structures commercial real estate leases. I designed it, built the full stack, architected the data pipelines, and handle sales and partnerships.</p>
+                        <div class="work-tags">
+                            <span>AI Platform</span>
+                            <span>LLM Pipelines</span>
+                            <span>Full Stack</span>
+                            <span>Sales</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-number">02</div>
-                    <div class="work-content">
-                        <h3>AI Prototyping TA/RA</h3>
-                        <p>Teaching and Research Assistant for BYU's "Creating Digital Products with AI: Strategy and Prototyping" course. I help develop curriculum, assist students with AI implementation projects, and research emerging AI application patterns. The course covers practical AI strategy, rapid prototyping methodologies, and real-world deployment considerations.</p>
-                        <div class="work-tech">
-                            <span>Teaching</span>
-                            <span>Curriculum Development</span>
-                            <span>AI Strategy</span>
-                            <span>Student Mentoring</span>
-                        </div>
+                    <div class="work-arrow" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                     </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-number">03</div>
-                    <div class="work-content">
-                        <h3>Isla Experiment</h3>
-                        <p>My approach to quickly testing AI applications built on Isla Engine. I ship configurable "faces" defined by JSON that cover data sources, prompts, and search settings. Several faces have generated revenue and established monthly recurring revenue streams. By measuring user engagement through small traffic tests, I can iterate quickly and focus on what works.</p>
-                        <div class="work-tech">
-                            <span>Product Validation</span>
-                            <span>Revenue Generation</span>
-                            <span>JSON Configuration</span>
-                            <span>Analytics Pipeline</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work-item">
-                    <div class="work-number">04</div>
-                    <div class="work-content">
-                        <h3>Document Intelligence Platform</h3>
-                        <p>A specialized Isla Engine application for lease and contract analysis, developed in partnership with real estate development firms. I'm working closely with industry professionals to refine the platform's offline operation, data provenance, and auditability features - critical requirements when processing sensitive business documents.</p>
-                        <div class="work-tech">
-                            <span>Document AI</span>
-                            <span>Real Estate Tech</span>
-                            <span>Enterprise Partnership</span>
-                            <span>Compliance</span>
+                </a>
+                <div class="work-card reveal reveal-delay-1">
+                    <div class="work-card-inner">
+                        <span class="work-number">02</span>
+                        <h3 class="work-title">Isla Journal</h3>
+                        <span class="work-role">Creator</span>
+                        <p class="work-desc">A private, AI-powered journaling app built on local LLMs. Everything runs on-device — no data leaves your machine. Designed and built from concept to shipped product.</p>
+                        <div class="work-tags">
+                            <span>Local LLMs</span>
+                            <span>Privacy-First</span>
+                            <span>Full Stack</span>
+                            <span>Product Design</span>
                         </div>
                     </div>
                 </div>
@@ -141,12 +203,21 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-simple">
-                <p>I'm always interested in learning about new projects and connecting with people working on interesting problems.</p>
+            <div class="contact-content reveal">
+                <span class="section-label">Contact</span>
+                <h2 class="section-heading">Got something worth building?</h2>
+                <p class="contact-body">
+                    I'm always looking for the next hard problem. If you're building
+                    something ambitious with AI — or need someone who can take an idea
+                    from napkin sketch to live product — let's talk.
+                </p>
+                <a href="mailto:taylorwall214@gmail.com" class="btn-primary btn-lg">
+                    taylorwall214@gmail.com
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -154,23 +225,19 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p>Taylor Wall</p>
-                    <div class="footer-contact">
-                        <span>taylorwall214@gmail.com</span>
-                        <span>•</span>
-                        <span>801-664-4966</span>
-                        <span>•</span>
-                        <span>Mapleton, UT</span>
-                    </div>
+            <div class="footer-inner">
+                <span class="footer-name">Taylor Wall</span>
+                <div class="footer-details">
+                    <span>taylorwall214@gmail.com</span>
+                    <span class="footer-dot"></span>
+                    <span>Mapleton, UT</span>
                 </div>
-                <div class="footer-links">
-                    <a href="https://github.com/twall03" target="_blank">
+                <div class="footer-socials">
+                    <a href="https://github.com/twall03" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/taylor-wall-3b7724290/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/twall03" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
