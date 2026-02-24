@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taylor Wall — Full Stack Product Manager</title>
+    <title>Taylor Wall — Builder, Seller, Entrepreneur</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <!-- Nav -->
     <nav class="nav" aria-label="Primary navigation">
         <div class="nav-inner">
-            <a href="#home" class="nav-logo">Taylor Wall</a>
+            <a href="#home" class="nav-logo">TW</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
@@ -26,65 +28,58 @@
 
     <!-- Hero -->
     <section id="home" class="hero">
-        <!-- Mountain layers -->
         <div class="mountains" aria-hidden="true">
             <svg class="mountain-svg" viewBox="0 0 1440 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#1a2230"/>
-                        <stop offset="100%" stop-color="#161a1e"/>
+                        <stop offset="0%" stop-color="#111827"/>
+                        <stop offset="100%" stop-color="#0b0f16"/>
                     </linearGradient>
                     <linearGradient id="mtn-far" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#2a3545"/>
-                        <stop offset="100%" stop-color="#232b38"/>
+                        <stop offset="0%" stop-color="#182030"/>
+                        <stop offset="100%" stop-color="#131a26"/>
                     </linearGradient>
                     <linearGradient id="mtn-mid" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#243040"/>
-                        <stop offset="100%" stop-color="#1e2732"/>
+                        <stop offset="0%" stop-color="#141b28"/>
+                        <stop offset="100%" stop-color="#101620"/>
                     </linearGradient>
                     <linearGradient id="mtn-near" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#1e2938"/>
-                        <stop offset="100%" stop-color="#1a222d"/>
+                        <stop offset="0%" stop-color="#111822"/>
+                        <stop offset="100%" stop-color="#0d121a"/>
                     </linearGradient>
                     <linearGradient id="mtn-front" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#1a2230"/>
-                        <stop offset="100%" stop-color="#161a1e"/>
+                        <stop offset="0%" stop-color="#0e1319"/>
+                        <stop offset="100%" stop-color="#0b0f16"/>
                     </linearGradient>
                 </defs>
-                <!-- Sky -->
                 <rect width="1440" height="600" fill="url(#sky)"/>
-                <!-- Far range — faintest, tallest peaks -->
                 <path d="M0 600 L0 320 Q60 300 120 270 Q180 240 240 210 Q320 175 400 160 Q460 150 520 140 Q600 125 680 115 Q740 108 800 120 Q860 135 920 155 Q980 140 1040 125 Q1100 112 1160 105 Q1220 115 1280 130 Q1340 150 1400 175 L1440 190 L1440 600 Z" fill="url(#mtn-far)" opacity="0.7"/>
-                <!-- Ridge highlight — far -->
-                <path d="M0 320 Q60 300 120 270 Q180 240 240 210 Q320 175 400 160 Q460 150 520 140 Q600 125 680 115 Q740 108 800 120 Q860 135 920 155 Q980 140 1040 125 Q1100 112 1160 105 Q1220 115 1280 130 Q1340 150 1400 175 L1440 190" fill="none" stroke="#3a5068" stroke-width="0.8" opacity="0.4"/>
-                <!-- Mid range -->
+                <path d="M0 320 Q60 300 120 270 Q180 240 240 210 Q320 175 400 160 Q460 150 520 140 Q600 125 680 115 Q740 108 800 120 Q860 135 920 155 Q980 140 1040 125 Q1100 112 1160 105 Q1220 115 1280 130 Q1340 150 1400 175 L1440 190" fill="none" stroke="#283848" stroke-width="0.8" opacity="0.3"/>
                 <path d="M0 600 L0 380 Q80 360 160 330 Q240 300 320 275 Q400 250 480 230 Q540 215 600 200 Q680 185 760 175 Q820 168 880 180 Q940 195 1000 210 Q1060 195 1120 180 Q1180 168 1240 175 Q1300 188 1360 210 Q1400 225 1440 240 L1440 600 Z" fill="url(#mtn-mid)" opacity="0.8"/>
-                <!-- Ridge highlight — mid -->
-                <path d="M0 380 Q80 360 160 330 Q240 300 320 275 Q400 250 480 230 Q540 215 600 200 Q680 185 760 175 Q820 168 880 180 Q940 195 1000 210 Q1060 195 1120 180 Q1180 168 1240 175 Q1300 188 1360 210 Q1400 225 1440 240" fill="none" stroke="#4a6a88" stroke-width="0.6" opacity="0.3"/>
-                <!-- Near range -->
                 <path d="M0 600 L0 430 Q100 410 200 385 Q280 362 360 340 Q440 318 520 300 Q600 282 680 270 Q740 262 800 272 Q860 285 920 300 Q1000 282 1080 268 Q1140 258 1200 265 Q1260 278 1320 298 Q1380 318 1440 340 L1440 600 Z" fill="url(#mtn-near)" opacity="0.85"/>
-                <!-- Front range — blends into page -->
                 <path d="M0 600 L0 480 Q80 468 160 450 Q260 430 360 410 Q440 392 520 378 Q600 365 680 356 Q740 350 800 358 Q860 368 920 380 Q1000 368 1080 358 Q1160 350 1240 356 Q1320 368 1400 385 L1440 395 L1440 600 Z" fill="url(#mtn-front)"/>
-                <!-- Mist at base blending into page bg -->
-                <rect y="520" width="1440" height="80" fill="#161a1e" opacity="0.8"/>
+                <rect y="520" width="1440" height="80" fill="#0b0f16" opacity="0.9"/>
             </svg>
         </div>
 
         <div class="hero-container">
             <div class="hero-content reveal">
-                <p class="hero-eyebrow">Full Stack Product Manager</p>
+                <p class="hero-eyebrow">Builder / Seller / Entrepreneur</p>
                 <h1 class="hero-title">
-                    <span class="title-line">I build things that</span>
-                    <span class="title-line title-italic">ship.</span>
+                    <span class="title-line">I build products</span>
+                    <span class="title-line">and sell them.</span>
                 </h1>
                 <p class="hero-description">
-                    Strategy, design, code, deployment — I take ideas from rough sketch
-                    to live product. Currently building AI systems at Abstracta
-                    and studying at BYU.
+                    Full stack developer and founder of
+                    <a href="https://www.abstracta.tech" target="_blank" rel="noopener noreferrer" class="inline-link">Abstracta</a>
+                    — where I built the product from scratch, then sold it into enterprise CRE firms myself. I sit at the intersection of product, engineering, and revenue.
                 </p>
                 <div class="hero-actions">
-                    <a href="#work" class="btn-primary">See my work</a>
-                    <a href="#contact" class="btn-secondary">Get in touch</a>
+                    <a href="#contact" class="btn-primary">
+                        Get in touch
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#work" class="btn-ghost">See my work</a>
                 </div>
             </div>
             <div class="hero-headshot reveal reveal-delay-1">
@@ -96,65 +91,86 @@
         </div>
     </section>
 
+    <!-- Numbers -->
+    <section class="metrics">
+        <div class="container">
+            <div class="metrics-grid reveal">
+                <div class="metric">
+                    <span class="metric-value">1</span>
+                    <span class="metric-label">Product built & launched</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">B2B</span>
+                    <span class="metric-label">Enterprise sales, full cycle</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">CRE</span>
+                    <span class="metric-label">Commercial real estate vertical</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">AI</span>
+                    <span class="metric-label">LLM pipelines in production</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-layout">
-                <div class="about-intro reveal">
+            <div class="about-grid">
+                <div class="about-left reveal">
                     <span class="section-label">About</span>
-                    <h2 class="section-heading">I don't just manage products.<br>I build them end to end.</h2>
-                    <p class="about-body">
-                        Most people specialize. I'd rather understand the whole picture.
-                        I design interfaces, write production code, architect data pipelines,
-                        and talk to customers — whatever it takes to get the right thing
-                        out the door.
-                    </p>
-                    <p class="about-body">
-                        My toolkit leans heavily on AI — agentic systems, LLM pipelines,
-                        RAG architectures — not as buzzwords, but as practical tools
-                        I use to build and ship faster than most teams.
-                    </p>
+                    <h2 class="section-heading">I don't just build the product.<br>I close the deal too.</h2>
                 </div>
-                <div class="about-skills reveal reveal-delay-1">
-                    <div class="skill-block">
-                        <h3>AI & Data</h3>
-                        <p>LLM Pipelines, RAG, Agentic Workflows, Prompt Engineering, Python, R, SQL</p>
-                    </div>
-                    <div class="skill-block">
-                        <h3>Engineering</h3>
-                        <p>React, Dart/Flutter, Python, JavaScript, Full Stack Development</p>
-                    </div>
-                    <div class="skill-block">
-                        <h3>Product & Growth</h3>
-                        <p>Product Strategy, UI/UX Design, Customer Discovery, Sales, Go-to-Market</p>
+                <div class="about-right">
+                    <p class="about-body reveal reveal-delay-1">
+                        Most people are either technical or commercial. I do both. I've written production code, designed interfaces, architected AI pipelines — and then picked up the phone to sell what I built directly to enterprise buyers.
+                    </p>
+                    <p class="about-body reveal reveal-delay-1">
+                        At Abstracta, I didn't just build an AI platform for commercial real estate. I identified the ICP, ran outbound prospecting, led discovery calls, gave product demos, and closed deals. I understand the full loop from product to pipeline to revenue.
+                    </p>
+                    <div class="skill-grid reveal reveal-delay-2">
+                        <div class="skill-card">
+                            <h3>Sales & GTM</h3>
+                            <p>Outbound prospecting, discovery calls, product demos, pipeline management, CRM, deal closing</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Product & Engineering</h3>
+                            <p>Full stack dev, AI/LLM pipelines, RAG architectures, UI/UX design, system architecture</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Tools</h3>
+                            <p>Python, React, JavaScript, SQL, Dart/Flutter, HubSpot, Figma, Git</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Roles -->
-    <section class="roles">
+    <!-- What I Bring -->
+    <section class="value-props">
         <div class="container">
-            <div class="roles-header reveal">
-                <span class="section-label">How I work</span>
-                <h2 class="section-heading">Three roles. One person.</h2>
+            <div class="value-header reveal">
+                <span class="section-label">Why me</span>
+                <h2 class="section-heading">What I bring to a sales team.</h2>
             </div>
-            <div class="roles-grid">
-                <div class="role-card reveal">
-                    <span class="role-number">01</span>
-                    <h3 class="role-title">Designer</h3>
-                    <p class="role-desc">I start with the user. Research, wireframes, UI — I shape the product before a line of code is written. Good design isn't decoration, it's the reason people come back.</p>
+            <div class="value-grid">
+                <div class="value-card reveal">
+                    <div class="value-icon">01</div>
+                    <h3>Technical depth</h3>
+                    <p>I can demo, troubleshoot, and talk product architecture with prospects — no SE hand-off needed for early conversations.</p>
                 </div>
-                <div class="role-card reveal reveal-delay-1">
-                    <span class="role-number">02</span>
-                    <h3 class="role-title">Engineer</h3>
-                    <p class="role-desc">I build it myself. Full stack, AI pipelines, data architecture — I write the code, deploy the infrastructure, and fix what breaks at 2am.</p>
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon">02</div>
+                    <h3>Full-cycle experience</h3>
+                    <p>I've done the entire sales motion at Abstracta — prospecting, qualifying, demoing, negotiating, closing. Not theoretical, real pipeline.</p>
                 </div>
-                <div class="role-card reveal reveal-delay-2">
-                    <span class="role-number">03</span>
-                    <h3 class="role-title">Manager</h3>
-                    <p class="role-desc">I own the outcome. Roadmap, prioritization, stakeholder alignment, go-to-market — I make sure the right thing ships at the right time.</p>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon">03</div>
+                    <h3>Builder mindset</h3>
+                    <p>I don't wait for playbooks. I build systems, automate outreach workflows, and find ways to move faster. Founder DNA in a team player.</p>
                 </div>
             </div>
         </div>
@@ -165,33 +181,40 @@
         <div class="container">
             <div class="section-intro reveal">
                 <span class="section-label">Work</span>
-                <h2 class="section-heading">A few things I've built.</h2>
+                <h2 class="section-heading">What I've built and sold.</h2>
             </div>
             <div class="work-grid">
                 <a href="https://www.abstracta.tech" target="_blank" rel="noopener noreferrer" class="work-card reveal">
                     <div class="work-card-inner">
-                        <span class="work-number">01</span>
-                        <h3 class="work-title">Abstracta</h3>
-                        <span class="work-role">Founder</span>
-                        <p class="work-desc">An AI platform that reads, understands, and structures commercial real estate leases. I designed it, built the full stack, architected the data pipelines, and handle sales and partnerships.</p>
-                        <div class="work-tags">
-                            <span>AI Platform</span>
-                            <span>LLM Pipelines</span>
-                            <span>Full Stack</span>
-                            <span>Sales</span>
+                        <div class="work-card-header">
+                            <div>
+                                <h3 class="work-title">Abstracta</h3>
+                                <span class="work-role">Founder — Built it, sold it</span>
+                            </div>
+                            <div class="work-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="work-arrow" aria-hidden="true">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        <p class="work-desc">AI platform that reads, understands, and structures commercial real estate leases. I designed it, wrote every line of code, architected the LLM pipelines — then ran outbound sales, booked demos, and closed enterprise CRE firms as customers.</p>
+                        <div class="work-highlights">
+                            <span>Full Stack Development</span>
+                            <span>AI/LLM Pipelines</span>
+                            <span>B2B Sales</span>
+                            <span>Enterprise Demos</span>
+                            <span>Outbound Prospecting</span>
+                        </div>
                     </div>
                 </a>
                 <div class="work-card reveal reveal-delay-1">
                     <div class="work-card-inner">
-                        <span class="work-number">02</span>
-                        <h3 class="work-title">Isla Journal</h3>
-                        <span class="work-role">Creator</span>
-                        <p class="work-desc">A private, AI-powered journaling app built on local LLMs. Everything runs on-device — no data leaves your machine. Designed and built from concept to shipped product.</p>
-                        <div class="work-tags">
+                        <div class="work-card-header">
+                            <div>
+                                <h3 class="work-title">Isla Journal</h3>
+                                <span class="work-role">Creator — Concept to shipped product</span>
+                            </div>
+                        </div>
+                        <p class="work-desc">Private, AI-powered journaling app built entirely on local LLMs. No data ever leaves the device. Designed and engineered end-to-end from initial concept to live product.</p>
+                        <div class="work-highlights">
                             <span>Local LLMs</span>
                             <span>Privacy-First</span>
                             <span>Full Stack</span>
@@ -207,17 +230,29 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content reveal">
-                <span class="section-label">Contact</span>
-                <h2 class="section-heading">Got something worth building?</h2>
-                <p class="contact-body">
-                    I'm always looking for the next hard problem. If you're building
-                    something ambitious with AI — or need someone who can take an idea
-                    from napkin sketch to live product — let's talk.
-                </p>
-                <a href="mailto:taylorwall214@gmail.com" class="btn-primary btn-lg">
-                    taylorwall214@gmail.com
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </a>
+                <div class="contact-text">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-heading">Let's talk.</h2>
+                    <p class="contact-body">
+                        Looking for my next role in B2B sales, product, or something that needs both. If you want someone who can sell and build — reach out.
+                    </p>
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:taylorwall214@gmail.com" class="btn-primary btn-lg">
+                        taylorwall214@gmail.com
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/twall03" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/twall03" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -227,19 +262,7 @@
         <div class="container">
             <div class="footer-inner">
                 <span class="footer-name">Taylor Wall</span>
-                <div class="footer-details">
-                    <span>taylorwall214@gmail.com</span>
-                    <span class="footer-dot"></span>
-                    <span>Mapleton, UT</span>
-                </div>
-                <div class="footer-socials">
-                    <a href="https://github.com/twall03" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/twall03" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
+                <span class="footer-location">Mapleton, UT</span>
             </div>
         </div>
     </footer>
